@@ -48,7 +48,7 @@ function ortalamaBul(newArray) {
   return sonuc;
 }
 
-console.log(ortalamaBul([50, -26, 153, 7]))
+console.log(ortalamaBul([109, 216, 288, 143, 185, 194]))
 
 /*
   GÖREV 3
@@ -71,8 +71,9 @@ console.log(ortalamaBul([50, -26, 153, 7]))
 */
 
 function ortalamadanBuyukleriBul(newArray, giki) {
-  let yenidizi : [];
-  let sonuc = (yenidizi.reduce((a,b) => (a+b),0)) / (yenidizi.length) > giki(newArray) ? yenidizi : 
+
+  let sonuc = newArray.length > 0 ? newArray.filter(nazmi => nazmi >= giki(newArray)) : null
+ return sonuc;
 }
 
 /* !!!! Burdan aşağısını değiştirmeyin !!!! */
