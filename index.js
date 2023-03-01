@@ -16,9 +16,14 @@
   örnek output: ""
 */
 
-function dosyaAdiniBul(/* kodlar buraya */) {
-  // kodlar buraya
+function dosyaAdiniBul(dosyayolu) {
+  
+  let yenidizi = (dosyayolu.split("/"));
+  let istenenDosya = yenidizi[yenidizi.length - 1];
+  return istenenDosya;
 }
+console.log(dosyaAdiniBul("C:/Users/johnsmith/Music/Beethoven_5.mp3"))
+
 
 /*
   GÖREV 2
