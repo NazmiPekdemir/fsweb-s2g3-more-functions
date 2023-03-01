@@ -43,9 +43,12 @@ console.log(dosyaAdiniBul("C:/Users/johnsmith/Music/Beethoven_5.mp3"))
   örnek output: 104
 */
 
-function ortalamaBul(/* kodlar buraya */) {
-  // kodlar buraya
+function ortalamaBul(newArray) {
+  let sonuc = newArray.length > 0 ? (newArray.reduce((a,b) => (a+b),0)) / (newArray.length) : null
+  return sonuc;
 }
+
+console.log(ortalamaBul([50, -26, 153, 7]))
 
 /*
   GÖREV 3
@@ -67,8 +70,9 @@ function ortalamaBul(/* kodlar buraya */) {
   örnek output: [109, 216, 288, 143, 185, 194]
 */
 
-function ortalamadanBuyukleriBul(/* kodlar buraya */) {
-  // kodlar buraya
+function ortalamadanBuyukleriBul(newArray, giki) {
+  let yenidizi : [];
+  let sonuc = (yenidizi.reduce((a,b) => (a+b),0)) / (yenidizi.length) > giki(newArray) ? yenidizi : 
 }
 
 /* !!!! Burdan aşağısını değiştirmeyin !!!! */
